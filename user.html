@@ -1,0 +1,112 @@
+<html>
+<title>Food Zone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="fz-top">
+  <div class="fz-bar fz-white fz-padding fz-card-2" style="letter-spacing:2px;">
+    <a href="#home" class="fz-bar-item fz-button">Food Zone</a>
+    <div class="fz-right fz-hide-small">
+      <a href="#vfi" class="fz-bar-item fz-button">View Food Items</a>
+      <a href="#oh" class="fz-bar-item fz-button">Order Here</a>
+      <a href="#pu" class="fz-bar-item fz-button">Profile Update</a>
+	  <a href="#cm" class="fz-bar-item fz-button">Comment Here</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="fz-display-container fz-content fz-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="fz-image" src="dumbiriani.jpg" alt="item of foodzone" width="1600" height="800">
+  <div class="fz-display-bottomleft fz-padding-large fz-opacity">
+    <h1 class="fz-xxlarge">Food Zone</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="fz-content" style="max-width:1100px">
+
+  <!-- view food Section -->
+  <div class="fz-row fz-padding-64" id="vfi">
+    <div class="fz-col m6 fz-padding-large fz-hide-small">
+     <img src="foodentry.jpg" class="fz-round fz-image fz-opacity-min" alt="Foodzone" width="600" height="750">
+    </div>
+
+    <div class="fz-col m6 fz-padding-large">
+      <h1 class="fz-center">View Food Items</h1><br>
+      <h5 class="fz-center">Follow the given instruction below</h5>
+      <p class="fz-large fz-center">To view the available food items click below</p>
+      <p class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="foodlist.php" class="fz-bar-item fz-button">Food List</a></p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Order form -->
+  <div class="fz-row fz-padding-64" id="oh">
+    <div class="fz-col l6 fz-padding-large">
+      <h1 class="fz-center">To Order your favourite food items follow the link below.</h1><br>
+	  <h2 class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="order.html" class="fz-bar-item fz-button">Click to Order</a></h2>
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="kacchi.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+  <div class="fz-row fz-padding-64" id="pu">
+    <div class="fz-col l6 fz-padding-large">
+	<br><br><br>
+      <h1 class="fz-center">Profile Update</h1><br>
+	  <h2 class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="profileupdate.html" class="fz-bar-item fz-button">Food Lovers</a></h2>
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="foodlovers.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+  <div class="fz-row fz-padding-64" id="ufi">
+    <div class="fz-col l6 fz-padding-large">
+      <img src="orangechicken.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="orangechicken.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Comment Section -->
+  <div class="fz-container fz-padding-64" id="cm">
+    <h1>Comment Here</h1><br>
+    <p class="fz-text-blue-grey fz-large"><b>Food Zone is the biggest online food portal in Bangladesh.</b></p>
+    <form action="comment.php" target="post">
+      <p><input class="fz-input fz-padding-16" type="text" placeholder="Message \ Special requirements" required name="comments"></p>
+      <p><button class="fz-button fz-light-grey fz-section" name="send" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="fz-center fz-light-grey fz-padding-32">
+  <p>Powered by karnelock</p>
+</footer>
+
+</body>
+</html>

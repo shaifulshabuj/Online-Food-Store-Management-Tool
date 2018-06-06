@@ -1,0 +1,114 @@
+<html>
+<title>Food Zone (admin)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="fz-top">
+  <div class="fz-bar fz-white fz-padding fz-card-2" style="letter-spacing:2px;">
+    <a href="#home" class="fz-bar-item fz-button">Food Zone FOR Admin</a>
+    <div class="fz-right fz-hide-small">
+      <a href="#ie" class="fz-bar-item fz-button">Items Entry</a>
+      <a href="#vo" class="fz-bar-item fz-button">View Orders</a>
+      <a href="#vu" class="fz-bar-item fz-button">View Users</a>
+	  <a href="#ufi" class="fz-bar-item fz-button">Update Food Info</a>
+	  <a href="#ms" class="fz-bar-item fz-button">Comment from Admin</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="fz-display-container fz-content fz-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="fz-image" src="dumbiriani.jpg" alt="item of foodzone" width="1600" height="800">
+  <div class="fz-display-bottomleft fz-padding-large fz-opacity">
+    <h1 class="fz-xxlarge">Food Zone</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="fz-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="fz-row fz-padding-64" id="ie">
+    <div class="fz-col m6 fz-padding-large fz-hide-small">
+     <img src="foodentry.jpg" class="fz-round fz-image fz-opacity-min" alt="Food Entry" width="600" height="750">
+    </div>
+
+    <div class="fz-col m6 fz-padding-large">
+      <h1 class="fz-center">Entry of New Items</h1><br>
+      <h5 class="fz-center">Follow the given instruction below</h5>
+      <p class="fz-large">During taking entry must know about the items in details carefully with interest. To make entry click the button below.</p>
+      <p class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="entryform.html" class="fz-bar-item fz-button">Entry Here</a></p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- view Order -->
+  <div class="fz-row fz-padding-64" id="vo">
+    <div class="fz-col l6 fz-padding-large">
+      <h1 class="fz-center">For viewing Orders follow the below link.</h1><br>
+	  <h2 class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="vieworder.php" class="fz-bar-item fz-button">View Orders</a></h2>
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="kacchi.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+  <div class="fz-row fz-padding-64" id="vu">
+    <div class="fz-col l6 fz-padding-large">
+	<br><br><br>
+      <h1 class="fz-center">View User List</h1><br>
+	  <h2 class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="viewuser.php" class="fz-bar-item fz-button">Food Lovers</a></h2>
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="foodlovers.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+  <div class="fz-row fz-padding-64" id="ufi">
+    <div class="fz-col l6 fz-padding-large">
+      <h1 class="fz-center">Update The Existing Food Informations</h1><br>
+      <h2 class="fz-large fz-text-grey fz-hide-medium fz-center"><a href="updateinfo.html" class="fz-bar-item fz-button">Click to Update</a></h2>  
+    </div>
+    
+    <div class="fz-col l6 fz-padding-large">
+      <img src="orangechicken.jpg" class="fz-round fz-image fz-opacity-min" alt="foodzone" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Comment Section -->
+  <div class="fz-container fz-padding-64" id="ms">
+    <h1>Comment Here</h1><br>
+    <p class="fz-text-blue-grey fz-large"><b>Food Zone is the biggest online food portal in Bangladesh.</b></p>
+    <form action="comment.php" target="post">
+      <p><input class="fz-input fz-padding-16" type="text" placeholder="Message \ Special requirements" required name="comments"></p>
+      <p><button class="fz-button fz-light-grey fz-section" name="send" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="fz-center fz-light-grey fz-padding-32">
+  <p>Powered by karnelock</p>
+</footer>
+
+</body>
+</html>

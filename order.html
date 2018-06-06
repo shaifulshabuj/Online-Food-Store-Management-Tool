@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-Up/Login Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/stylePage.css">
+  
+      <link rel="stylesheet" href="css/form.css">
+
+  
+</head>
+
+<body>
+<h1 text-align="center" style="color:black;">FoodZone</h1>
+  <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#order">Order Items</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="order">   
+          <h1>Ordering is easy</h1>
+          
+          <form action="order.php" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Order Id<span class="req">*</span>
+              </label>
+              <input type="number" name="oID" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Order Date<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off" name="odate"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Ordered Product<span class="req">*</span>
+            </label>
+            <input type="number"required autocomplete="off" name="order1"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Contact<span class="req">*</span>
+            </label>
+            <input type="number"required autocomplete="off" name="phone"/>
+          </div>
+          
+          <button type="submit" name="send" class="button button-block"/>Order Submit</button>
+          
+          </form>
+
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+  <script src='js/anotherjs.js'></script>
+
+    <script src="js/form.js"></script>
+
+</body>
+</html>
